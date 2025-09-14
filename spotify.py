@@ -1,6 +1,8 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+import secrets
 
+sp = secrets.keys.sp
 
 def play_song(song_name, artist_name=None, device_id=None):
     try: 
