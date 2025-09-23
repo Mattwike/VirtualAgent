@@ -1,7 +1,6 @@
 from newsdataapi import NewsDataApiClient
 from newsdataapi import newsdataapi_exception
 import secrets
-import json
 
 api = NewsDataApiClient(apikey=secrets.keys.newsAPI)
 
@@ -20,5 +19,4 @@ def getNews(query:str=None):
     except newsdataapi_exception as e:
         print("API error:", e)
 
-
-getNews("Crypto")
+    return articles
